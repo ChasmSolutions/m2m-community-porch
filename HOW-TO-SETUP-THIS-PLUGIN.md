@@ -18,18 +18,18 @@ ids, and domains inside the plugin to the names of the project you are working o
 Because Wordpress plugins integration directly in the the Wordpress/Disciple Tools system. It is possible
 to have class name and function name collisions. You must refactor.
 
-1.  Rename file name in the root folder called ```disciple-tools-porch-template.php```
-1. find/replace string ```DiscipleTools/disciple-tools-porch-template```
-1. find/replace string ```Porch Template```
-1. find/replace string ```Disciple_Tools_Porch_Template```
-1. find/replace string ```disciple-tools-porch-template```
-1. find/replace string ```dt_porch_template```
+1.  Rename file name in the root folder called ```m2m-community-porch.php```
+1. find/replace string ```ChrisChasm/m2m-community-porch```
+1. find/replace string ```M2M.Community Porch```
+1. find/replace string ```M2M_Community_Porch```
+1. find/replace string ```m2m-community-porch```
+1. find/replace string ```m2m_community_porch```
 
 
 ## 2. REDUCE UNWANTED HOME STYLE FOLDERS
 
 Review the different home styles in the folders labeled ```home-```. These can be turned on by a single line in the
-root file ```disciple-tools-porch-template.php``` (or whatever you refactored it to be). The ```loader.php``` file in
+root file ```m2m-community-porch.php``` (or whatever you refactored it to be). The ```loader.php``` file in
 the root of each home style will load all the elements needed to redirect the root URL and load the single page site.
 You can find these around line 110, inside the ```__construct```.
 
@@ -51,7 +51,7 @@ see the entire site has changed to ```home-3```.
 
 At this point, if you were selecting ```home-3``` as your starter porch, you could delete all the other ```home-``` folders,
 i.e. ```home-1, home-2, home-4, home-5, home-6, home-7, home-8, home-blank```. And delete all the uncommented lines in the
-root ```disciple-tools-porch-template.php```.
+root ```m2m-community-porch.php```.
 
 
 ## 3. REDUCE UNWANTED SITE SECTIONS
