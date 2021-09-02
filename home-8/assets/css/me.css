@@ -299,3 +299,17 @@ body.page-template-page-fullsingle-me.me-video {
     height: 100%; }
   body.page-template-page-fullsingle-me.me-video .fs-me {
     background-color: rgba(0, 0, 0, 0.6); }
+
+#modal {
+    display: none;
+    width: 50%;
+    height: 75%;
+    position: absolute;
+    z-index: 100;
+    border: 1px white solid;
+    top: 100px;
+    margin: 0 auto;
+    background: white;
+    opacity: .9;
+    padding: 1em;
+    }

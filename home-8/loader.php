@@ -5,7 +5,7 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
  * @todo Configure the title value, root value, type value, and token value. Don't change PORCH_ variable.
  */
 if ( ! defined( 'PORCH_TITLE' ) ) {
-    define( 'PORCH_TITLE', 'Home 8' ); // Used in tabs and titles, avoid special characters. Spaces are okay.
+    define( 'PORCH_TITLE', 'M2M.Community' ); // Used in tabs and titles, avoid special characters. Spaces are okay.
 }
 if ( ! defined( 'PORCH_ROOT' ) ) {
     define( 'PORCH_ROOT', 'porch_app' ); // Alphanumeric key. Use underscores not hyphens. No special characters.
@@ -17,7 +17,7 @@ if ( ! defined( 'PORCH_TOKEN' ) ) {
     define( 'PORCH_TOKEN', 'porch_app_8' ); // Alphanumeric key. Use underscores not hyphens. No special characters. Must be less than 20 characters
 }
 
-class DT_Porch_Template_Home_8 extends DT_Magic_Url_Base
+class M2M_Community_Porch_Home_8 extends DT_Magic_Url_Base
 {
     public $magic = false;
     public $parts = false;
@@ -90,4 +90,4 @@ class DT_Porch_Template_Home_8 extends DT_Magic_Url_Base
         require_once( 'body.php' );
     }
 }
-DT_Porch_Template_Home_8::instance();
+M2M_Community_Porch_Home_8::instance();

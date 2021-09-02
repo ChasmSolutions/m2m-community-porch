@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Gets the instance of the `DT_Porch_Template` class.
+ * Gets the instance of the `M2M_Community_Porch` class.
  *
  * @since  0.1
  * @access public
@@ -53,7 +53,7 @@ function m2m_community_porch() {
         require_once get_template_directory() . '/dt-core/global-functions.php';
     }
 
-    return DT_Porch_Template::instance();
+    return M2M_Community_Porch::instance();
 }
 add_action( 'after_setup_theme', 'm2m_community_porch', 20 );
 
@@ -63,7 +63,7 @@ add_action( 'after_setup_theme', 'm2m_community_porch', 20 );
  * @since  0.1
  * @access public
  */
-class DT_Porch_Template {
+class M2M_Community_Porch {
 
     private static $_instance = null;
     public static function instance() {
@@ -76,7 +76,7 @@ class DT_Porch_Template {
     private function __construct() {
 
         require_once( 'home-8/loader.php'); /* single looping video, full screen */
-        
+
 
         /***************************************************************************************************************
         /***************************************************************************************************************
@@ -196,8 +196,8 @@ class DT_Porch_Template {
 
 
 // Register activation hook.
-register_activation_hook( __FILE__, [ 'DT_Porch_Template', 'activation' ] );
-register_deactivation_hook( __FILE__, [ 'DT_Porch_Template', 'deactivation' ] );
+register_activation_hook( __FILE__, [ 'M2M_Community_Porch', 'activation' ] );
+register_deactivation_hook( __FILE__, [ 'M2M_Community_Porch', 'deactivation' ] );
 
 
 if ( ! function_exists( 'm2m_community_porch_hook_admin_notice' ) ) {
